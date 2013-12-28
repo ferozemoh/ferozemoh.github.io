@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type="text/javascript" src="slicer.js" canvas="myCanvas"></script>
+		<script type = 'text/javascript' src="jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="paper.js"></script>
+		<link rel="stylesheet" type="text/css" href="slicer.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Cabin:600' rel='stylesheet' type='text/css'>
+	</head>
+	<body id = "body">
+		<div id = "main">
+			
+			<div class = "blocks">
+				<p><span id = "triggermail">TriggerMail </span> Email Template Slicer For &lt;partner&gt;</p>
+			</div>
+			
+			<div class = "blocks">
+				<textarea id="imagebox" rows="2" cols = "100" placeholder = "Drag a template mockup image from your computer, or paste a URL link to it." autofocus></textarea>
+			</div>
+
+			<div class = "blocks">
+				<input id = "submit" type = "submit" onclick="changeBackdrop();">
+			</div>
+			
+			<div class = "buttons">
+				
+				<button id = "horizontal" type="button" class="btn btn-sm btn-primary">
+    				<span class="glyphicon glyphicon-resize-horizontal"></span>
+				</button>
+
+				<button id = "vertical" type="button" class="btn btn-sm btn-danger">
+  					<span class="glyphicon glyphicon-resize-vertical"></span>
+				</button>
+			</div>
+
+			<div class = "blocks">
+				<br/>
+				<canvas id="myCanvas" width="700" height="1100"></canvas>
+			</div>
+
+		</div>
+	</body>
+</html>
